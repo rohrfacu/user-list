@@ -102,12 +102,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hi Southteams</h1>
-      <h2>I hope you like this revolutionary user list app :)</h2>
-      <h4>
-        If you like, you can filter and sort by first name, edit the user and
-        paginate trough the result list.{" "}
-      </h4>
       {/* SearchBar component */}
       <SearchBar searchByName={(name) => searchByName(name)} />
       <br />
