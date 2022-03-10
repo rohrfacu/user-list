@@ -1,10 +1,11 @@
-import "./styles.scss";
-import { useState, useEffect } from "react";
-import userService from "./services/user";
-import UserCard from "./components/UserCard";
-import SearchBar from "./components/SearchBar";
-import Sort from "./components/Sort";
-import Pagination from "./components/Pagination";
+require("./styles.scss");
+const React = require("react");
+const { useState, useEffect } = React;
+const userService = require("./services/user");
+const UserCard = require("./components/UserCard");
+const SearchBar = require("./components/SearchBar");
+const Sort = require("./components/Sort");
+const Pagination = require("./components/Pagination");
 
 const App = () => {
   const [userList, setUserList] = useState(null);
@@ -100,7 +101,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div>
       <h1>Hi Southteams</h1>
       <h2>I hope you like this revolutionary user list app :)</h2>
       <h4>
@@ -140,4 +141,4 @@ const App = () => {
   );
 };
 
-export default App;
+module.exports = App;

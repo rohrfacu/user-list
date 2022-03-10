@@ -1,4 +1,4 @@
-import request from "axios";
+const request = require("axios");
 
 const url = "https://randomuser.me/api/";
 
@@ -7,7 +7,7 @@ const url = "https://randomuser.me/api/";
 const getUserList = (page) => {
   const params = {
     results: 10,
-    seed: "southteams"
+    seed: "southteams",
   };
   if (page) {
     params.page = page;
@@ -17,6 +17,6 @@ const getUserList = (page) => {
   });
 };
 
-export default {
-  getUserList
+module.exports = {
+  getUserList,
 };

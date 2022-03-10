@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
-import { FaSortAlphaDown } from "@react-icons/all-files/fa/FaSortAlphaDown";
-import { FaSortAlphaUp } from "@react-icons/all-files/fa/FaSortAlphaUp";
+const React = require("react");
+const { useState, useEffect } = React;
+const {
+  FaSortAlphaDown,
+} = require("@react-icons/all-files/fa/FaSortAlphaDown");
+const { FaSortAlphaUp } = require("@react-icons/all-files/fa/FaSortAlphaUp");
 
 const Sort = ({ sortByName }) => {
   const [sortType, setSortType] = useState(false);
@@ -32,4 +35,4 @@ const Sort = ({ sortByName }) => {
   );
 };
 
-export default Sort;
+module.exports = Sort;

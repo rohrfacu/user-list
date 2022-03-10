@@ -1,5 +1,6 @@
-import { FaUserEdit } from "@react-icons/all-files/fa/FaUserEdit";
-import { useState, useEffect } from "react";
+const React = require("react");
+const { useState, useEffect } = React;
+const { FaUserEdit } = require("@react-icons/all-files/fa/FaUserEdit");
 
 const UserCard = (props) => {
   const { id, photo, onChangeUser } = props;
@@ -34,7 +35,7 @@ const UserCard = (props) => {
         name,
         email,
         number,
-        location
+        location,
       });
     }
   }, [name, email, number, location, editMode]);
@@ -135,4 +136,4 @@ const UserCard = (props) => {
   );
 };
 
-export default UserCard;
+module.exports = UserCard;

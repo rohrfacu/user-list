@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
-import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
-import { FaArrowLeft } from "@react-icons/all-files/fa/FaArrowLeft";
+const React = require("react");
+const { useState, useEffect } = React;
+const { FaArrowRight } = require("@react-icons/all-files/fa/FaArrowRight");
+const { FaArrowLeft } = require("@react-icons/all-files/fa/FaArrowLeft");
 
 const Pagination = ({ onPageChange }) => {
   const [page, setPage] = useState(1);
@@ -45,4 +46,4 @@ const Pagination = ({ onPageChange }) => {
   );
 };
 
-export default Pagination;
+module.exports = Pagination;

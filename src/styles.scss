@@ -1,7 +1,7 @@
 // Our shadow variables,
 // created with the tool https://www.cssmatic.com/es/box-shadow
-$default-shadow:  0px 0px 8px 5px rgba(209,207,209,1);
-$photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
+$default-shadow: 0px 0px 8px 5px rgba(209, 207, 209, 1);
+$photo-shadow: 0px 0px 8px 5px rgba(156, 156, 156, 0.3);
 
 // default code sandbox styles
 .App {
@@ -55,8 +55,8 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
 
 // each of the inputs of the edit mode in UserCard
 .edit-mode-input {
-  flex-grow:1;    
-  text-align:center;
+  flex-grow: 1;
+  text-align: center;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
@@ -115,7 +115,7 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
   border-radius: 10px;
   max-width: 300px;
   box-shadow: $default-shadow;
-  
+
   // header styles
   .header {
     border-radius: 10px 10px 0 0;
@@ -126,12 +126,12 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
     background-color: rgb(61, 143, 250);
     color: #fff;
     font-size: 20px;
-    display:flex;
-    flex-wrap:nowrap;
-    align-items:center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     p {
-      flex-grow:1;    
-      text-align:center;
+      flex-grow: 1;
+      text-align: center;
     }
   }
   // photo styles
@@ -152,7 +152,7 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
   }
 }
 
-// Simple tooltip styles, this styles in particular are from 
+// Simple tooltip styles, this styles in particular are from
 // https://www.w3schools.com/css/css_tooltip.asp
 .tooltip {
   position: relative;
@@ -167,7 +167,7 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   position: absolute;
   z-index: 1;
 }
@@ -180,7 +180,7 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   position: absolute;
   z-index: 1;
   left: 105%;
@@ -194,7 +194,7 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   position: absolute;
   z-index: 1;
   right: 105%;
@@ -211,4 +211,3 @@ $photo-shadow:  0px 0px 8px 5px rgba(156, 156, 156, 0.3);
 .tooltip:hover .tooltip-text-right {
   visibility: visible;
 }
-

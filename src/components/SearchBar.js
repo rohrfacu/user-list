@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+const React = require("react");
+const { useState, useEffect } = React;
 
 const SearchBar = ({ searchByName }) => {
   const [name, setName] = useState("");
@@ -23,4 +24,4 @@ const SearchBar = ({ searchByName }) => {
   );
 };
 
-export default SearchBar;
+module.exports = SearchBar;
